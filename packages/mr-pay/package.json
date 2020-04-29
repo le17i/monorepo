@@ -1,11 +1,11 @@
 {
-  "name": "mr-pay",
+  "name": "@le17i/mr-pay",
   "version": "0.1.1",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prepublish": "npm build"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -37,5 +37,17 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:le17i/monorepo.git"
+  },
+  "files": [
+    "dist",
+    "src",
+    "assets"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
