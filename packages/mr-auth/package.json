@@ -3,10 +3,17 @@
   "version": "0.2.3",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name mr-auth ./src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5",
+    "vuetify": "^2.2.11",
+    "vuex": "^3.1.2"
+  },
+  "peerDependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
@@ -49,12 +56,14 @@
     "> 1%",
     "last 2 versions"
   ],
-  "main": "src/router/index.js",
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com:le17i/monorepo.git"
   },
+  "main": "./dist/mr-auth.common.js",
+  "style": "./dist/mr-auth.css",
   "files": [
+    "dist",
     "src",
     "assets"
   ],
