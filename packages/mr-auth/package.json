@@ -3,7 +3,7 @@
   "version": "0.3.1",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name mr-auth ./src/index.js",
+    "build": "vue-cli-service build --target lib --name mr-auth ./src/router/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
