@@ -4,7 +4,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prepublish": "npm build"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -62,8 +63,6 @@
     "type": "git",
     "url": "ssh://git@github.com:le17i/monorepo.git"
   },
-  "main": "./dist/mr-auth.common.js",
-  "style": "./dist/mr-auth.css",
   "files": [
     "dist",
     "src",
