@@ -1,6 +1,6 @@
 {
   "name": "@le17i/mr-auth",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name mr-auth ./src/router/index.js",
