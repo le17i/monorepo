@@ -1,7 +1,6 @@
 {
-  "name": "mr-auth",
+  "name": "@le17i/mr-auth",
   "version": "0.2.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
