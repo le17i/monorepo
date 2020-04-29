@@ -1,11 +1,11 @@
 {
-  "name": "@le17i/components",
+  "name": "@le17i/mr-components",
   "version": "1.0.1",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name components",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build --target lib --name mr-components ./src/index.js",
+    "lint": "vue-cli-service lint",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -45,8 +45,18 @@
     "> 1%",
     "last 2 versions"
   ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:le17i/monorepo.git"
+  },
+  "main": "./dist/mr-components.common.js",
+  "style": "./dist/mr-components.css",
+  "files": [
+    "dist",
+    "src",
+    "assets"
+  ],
   "publishConfig": {
-    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   }
 }
