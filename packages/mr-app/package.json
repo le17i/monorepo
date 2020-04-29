@@ -1,11 +1,11 @@
 {
-  "name": "mr-app",
+  "name": "@le17i/mr-app",
   "version": "0.2.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prepublish": "yarn build"
   },
   "dependencies": {
     "@le17i/mr-auth": "^0.3.2",
@@ -46,5 +46,15 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:le17i/monorepo.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
