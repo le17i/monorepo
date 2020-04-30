@@ -66,6 +66,7 @@
   "files": [
     "dist",
     "src",
+    "src/router/index.js",
     "assets"
   ],
   "publishConfig": {
