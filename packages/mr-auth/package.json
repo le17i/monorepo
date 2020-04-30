@@ -63,10 +63,10 @@
     "type": "git",
     "url": "ssh://git@github.com:le17i/monorepo.git"
   },
+  "main": "./src/router/index.js",
   "files": [
     "dist",
     "src",
-    "src/router/index.js",
     "assets"
   ],
   "publishConfig": {
